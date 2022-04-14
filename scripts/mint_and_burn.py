@@ -1,4 +1,3 @@
-from brownie import PRToken
 from scripts.helpful_scripts import get_account, get_contract
 
 
@@ -32,5 +31,12 @@ def total_supply():
 
 
 def main():
-    burn()
-    total_supply()
+    morb = input("Type m for mint or b for burn: ")
+    if morb == "m" or morb == "M":
+        mint()
+        total_supply()
+    elif morb == "b" or morb == "B":
+        burn()
+        total_supply()
+    else:
+        pass
