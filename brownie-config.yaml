@@ -1,0 +1,17 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.5.0
+
+compiler:
+  solc:
+    remappings:
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.5.0'
+
+dotenv: .env
+
+networks:
+  rinkeby:
+    prtoken: '0x499aF2B09Db0Af953eD406dDb1E4b2C34bD95c0d'
+    verify: True
+
+wallets:
+  from_key: ${PRIVATE_KEY}
